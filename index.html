@@ -10,12 +10,18 @@
 </head>
 
 <body>
-    <h1>To-Do List</h1>
-    <ul id="taskList"></ul>
-    <form>
-        <input type="text" id="newTaskInput" placeholder="Додати завдання...">
-        <button type="button">Додати</button>
-    </form>
+    <div class="todo-container">
+        <div class="todo-header">
+            <h1>To Do List</h1>
+        </div>
+        <form class="todo-form">
+            <label for="newTaskInput">Додати завдання:</label>
+            <input type="text" id="newTaskInput" name="newTaskInput" placeholder="Введіть текст завдання" required>
+            <button type="submit">Додати</button>
+        </form>
+        <ul class="todo-list"></ul>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
